@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1982-09-16",
+    "income": 640401,
+    "career": "政府／公營事業",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "未婚",
+    "dependents": 1,
+    "residence": "台北市",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "A",
+    "period": "12",
+    "balance_loan": 8500000,
+    "usage": "購置不動產-非自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "強制險",
+    "insurance_premiums": 3656,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 567777,
+    "claim_descript": "駕駛人酗酒",
+    "dividend_category": "季配",
+    "fund_name": "華南永昌龍盈平衡基金",
+    "price_currency": "台幣(TWN)",
+    "net": 24.9565
+  }
+]

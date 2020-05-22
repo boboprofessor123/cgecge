@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1998-02-25",
+    "income": 294053,
+    "career": "軍公教",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "已婚",
+    "dependents": 4,
+    "residence": "台北市",
+    "is_register_web_bank": 1,
+    "is_register_mobile_pay": 0,
+    "credit_level": "A",
+    "period": "12",
+    "balance_loan": 25500000,
+    "usage": "投資理財與其他",
+    "property_house": "公教房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "個人健康險",
+    "insurance_premiums": 2785,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 231460,
+    "claim_descript": "疾病",
+    "dividend_category": "季配",
+    "fund_name": "華南永昌鳳翔貨幣市場基金",
+    "price_currency": "台幣(TWN)",
+    "net": 12.05
+  }
+]

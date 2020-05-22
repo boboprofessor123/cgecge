@@ -1,0 +1,47 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class='col-md-12'>
+            <br/><br/>
+            <center>
+                <h1>心理測驗</h1>
+            </center>
+            {% ifequal value 0 %}
+            <form name='my_test' action='/newplayer/form/' method='POST'>
+
+                {% csrf_token %} {% for answer in answers %}
+                <br/> {{answer.ques}}<br/>
+                <input type="radio" name="{{answer.ques}}" value="{{answer.ans1}}"> {{answer.ans1}}<br/>
+                <input type="radio" name="{{answer.ques}}" value="{{answer.ans2}}"> {{answer.ans2}}<br/> {% if answer in del_ans3s %}
+                <input type="radio" name="{{answer.ques}}" value="{{answer.ans3}}"> {{answer.ans3}}<br/> {% endif %} {% if answer in del_ans4s %}
+                <input type="radio" name="{{answer.ques}}" value="{{answer.ans4}}"> {{answer.ans4}}<br/> {% endif %} {% endfor %}
+
+                <br/><br/>
+                <center><input type="submit" id="form_output" class="btn btn-primary btn-lg" value='送出'></center>
+                {% endifequal %} {% ifequal value 11 %}
+                <div class="col-md-4">
+                    {{ result_value.category }}
+                    <br/> {{ result_value.introduction }}
+                </div>
+                {% endifequal %} {% ifequal value 17 %}
+                <div class="col-md-4">
+                    {{ result_value.category }}
+                    <br/> {{ result_value.introduction }}
+                </div>
+                {% endifequal %} {% ifequal value 24 %}
+                <div class="col-md-4">
+                    {{ result_value.category }}
+                    <br/> {{ result_value.introduction }}
+                </div>
+                {% endifequal %} {% ifequal value 30 %}
+                <div class="col-md-4">
+                    {{ result_value.category }}
+                    <br/> {{ result_value.introduction }}
+                </div>
+                {% endifequal %}
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

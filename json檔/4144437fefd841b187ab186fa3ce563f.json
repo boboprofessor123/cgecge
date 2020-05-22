@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1971-02-01",
+    "income": 1500000,
+    "career": "製造／建築",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "已婚",
+    "dependents": 1,
+    "residence": "高雄市",
+    "is_register_web_bank": 1,
+    "is_register_mobile_pay": 0,
+    "credit_level": "C",
+    "period": "12",
+    "balance_loan": 59500000,
+    "usage": "房屋修繕",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "旅綜險",
+    "insurance_premiums": 2294,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 271087,
+    "claim_descript": "其他",
+    "dividend_category": "年配",
+    "fund_name": "華南永昌鳳翔貨幣市場基金",
+    "price_currency": "台幣(TWN)",
+    "net": 12.05
+  }
+]

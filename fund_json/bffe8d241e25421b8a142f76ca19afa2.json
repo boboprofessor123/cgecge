@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1972-09-05",
+    "income": 750000,
+    "career": "軍／警／消防",
+    "gender": 0,
+    "is_app_bank": 1,
+    "marital": "未婚",
+    "dependents": 3,
+    "residence": "高雄市",
+    "is_register_web_bank": 1,
+    "is_register_mobile_pay": 0,
+    "credit_level": "A",
+    "period": "12",
+    "balance_loan": 68000000,
+    "usage": "購置不動產-自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "強制險",
+    "insurance_premiums": 3106,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 780372,
+    "claim_descript": "整車被竊",
+    "dividend_category": "季配",
+    "fund_name": "華南永昌鳳翔貨幣市場基金",
+    "price_currency": "台幣(TWN)",
+    "net": 12.05
+  }
+]

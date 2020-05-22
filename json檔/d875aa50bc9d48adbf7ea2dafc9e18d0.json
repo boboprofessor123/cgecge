@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1992-06-22",
+    "income": 764338,
+    "career": "學校／補習班",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "已婚",
+    "dependents": 2,
+    "residence": "彰化縣",
+    "is_register_web_bank": 1,
+    "is_register_mobile_pay": 0,
+    "credit_level": "C",
+    "period": "12",
+    "balance_loan": 17000000,
+    "usage": "購置不動產-自用",
+    "property_house": "政策性房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "強制險",
+    "insurance_premiums": 2852,
+    "is_active": 1,
+    "is_blacklist": 1,
+    "claim_amount": 162711,
+    "claim_descript": "第三人過失",
+    "dividend_category": "月配",
+    "fund_name": "華南永昌龍盈平衡基金",
+    "price_currency": "台幣(TWN)",
+    "net": 24.9565
+  }
+]

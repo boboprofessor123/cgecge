@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1985-04-16",
+    "income": 1219835,
+    "career": "軍公教",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "已婚",
+    "dependents": 3,
+    "residence": "高雄市",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "C",
+    "period": "12",
+    "balance_loan": 34000000,
+    "usage": "房屋修繕",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "任意險",
+    "insurance_premiums": 3750,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 488968,
+    "claim_descript": "天災－颱風",
+    "dividend_category": "月配",
+    "fund_name": "華南永昌麒麟貨幣市場基金",
+    "price_currency": "台幣(TWN)",
+    "net": 16.2784
+  }
+]

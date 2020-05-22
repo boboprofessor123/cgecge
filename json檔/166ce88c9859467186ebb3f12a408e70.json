@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1987-09-27",
+    "income": 362642,
+    "career": "製造／建築",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "已婚",
+    "dependents": 5,
+    "residence": "宜蘭縣",
+    "is_register_web_bank": 1,
+    "is_register_mobile_pay": 0,
+    "credit_level": "B",
+    "period": "12",
+    "balance_loan": 34000000,
+    "usage": "購置不動產-自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "個人健康險",
+    "insurance_premiums": 2325,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 506840,
+    "claim_descript": "其他",
+    "dividend_category": "半年配",
+    "fund_name": "華南永昌龍盈平衡基金",
+    "price_currency": "台幣(TWN)",
+    "net": 24.9565
+  }
+]

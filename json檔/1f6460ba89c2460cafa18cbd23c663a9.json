@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "2001-05-26",
+    "income": 550000,
+    "career": "醫療／專業事務所",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "其他",
+    "dependents": 1,
+    "residence": "屏東縣",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "A",
+    "period": "12",
+    "balance_loan": 68000000,
+    "usage": "投資理財與其他",
+    "property_house": "政策性房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "強制險",
+    "insurance_premiums": 3743,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 267597,
+    "claim_descript": "整車被竊",
+    "dividend_category": "季配",
+    "fund_name": "華南永昌物聯網精選基金",
+    "price_currency": "台幣(TWN)",
+    "net": 17.4
+  }
+]

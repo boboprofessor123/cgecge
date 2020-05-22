@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1992-09-27",
+    "income": 438749,
+    "career": "醫療／專業事務所",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "未婚",
+    "dependents": 5,
+    "residence": "南投縣",
+    "is_register_web_bank": 1,
+    "is_register_mobile_pay": 0,
+    "credit_level": "A",
+    "period": "12",
+    "balance_loan": 51000000,
+    "usage": "購置不動產-自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "任意險",
+    "insurance_premiums": 2574,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 296076,
+    "claim_descript": "不明原因其他",
+    "dividend_category": "半年配",
+    "fund_name": "華南永昌麒麟貨幣市場基金",
+    "price_currency": "台幣(TWN)",
+    "net": 16.2784
+  }
+]

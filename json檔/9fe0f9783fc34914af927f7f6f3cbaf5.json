@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1998-04-23",
+    "income": 933497,
+    "career": "學校／補習班",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "未婚",
+    "dependents": 5,
+    "residence": "南投縣",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "A",
+    "period": "12",
+    "balance_loan": 59500000,
+    "usage": "投資理財與其他",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "任意險",
+    "insurance_premiums": 3404,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 883716,
+    "claim_descript": "不明原因停放中被刮損",
+    "dividend_category": "半年配",
+    "fund_name": "華南永昌永昌基金",
+    "price_currency": "台幣(TWN)",
+    "net": 20.05
+  }
+]

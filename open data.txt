@@ -1,0 +1,20 @@
+import urllib.request,bs4,requests,time,json,re,os.path
+
+for number in range(0,19):
+    url = 'https://data.gov.tw/datasets/search?qs=dtid%3A550&order=downloadcount&type=dataset&page=' + str(number)
+    header = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36'}
+
+    resp = requests.get(url, headers=header)
+    soup = bs4.BeautifulSoup(resp.text, 'html.parser')
+
+
+    information_1 = soup.find_all('div', 'node node-dataset node-teaser node-viewmode-teaser clearfix')
+    information_2 = soup.find_all('div', 'node node-dataset node-promoted node-teaser node-viewmode-teaser clearfix')
+
+    for i in information_1:
+        url_information_1 = i.find('a').text
+        print(url_information_1)
+
+    for j in information_2:
+        url_information_2 = j.find('a').text
+        print(url_information_2)

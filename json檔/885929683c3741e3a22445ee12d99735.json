@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1988-02-25",
+    "income": 1300000,
+    "career": "軍公教",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "已婚",
+    "dependents": 1,
+    "residence": "新北市",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "C",
+    "period": "12",
+    "balance_loan": 17000000,
+    "usage": "購置不動產-自用",
+    "property_house": "公教房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "強制險",
+    "insurance_premiums": 3313,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 452156,
+    "claim_descript": "駕駛人過失",
+    "dividend_category": "年配",
+    "fund_name": "華南永昌永昌基金",
+    "price_currency": "台幣(TWN)",
+    "net": 20.05
+  }
+]

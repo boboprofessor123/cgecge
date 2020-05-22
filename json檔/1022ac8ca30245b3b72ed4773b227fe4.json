@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1974-07-17",
+    "income": 488731,
+    "career": "軍公教",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "未婚",
+    "dependents": 5,
+    "residence": "台北市",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "A",
+    "period": "12",
+    "balance_loan": 17000000,
+    "usage": "購置不動產-自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "強制險",
+    "insurance_premiums": 2171,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 808096,
+    "claim_descript": "整車被竊",
+    "dividend_category": "月配",
+    "fund_name": "華南永昌永昌基金",
+    "price_currency": "台幣(TWN)",
+    "net": 20.05
+  }
+]

@@ -1,0 +1,72 @@
+{% extends 'base.html' %} {% block head %}
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid rgba(243, 227, 227, 0.61);
+        border-collapse: collapse;
+    }
+    
+    table th {
+        background-color: #eee;
+    }
+    
+    th,
+    td {
+        padding: 15px;
+    }
+</style>
+{% endblock %} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <h3>基金新聞</h3>
+            <form class="form-article" action="/" method="POST" name="my_article">
+                {% csrf_token %}{{ form_article.as_p }}
+                <div style="position: relative; top: -60px; left: 280px;">
+                <input class="btn btn-primary" type='submit' value='送出'>
+            </div>
+            </form>
+            <div>
+                <hr>
+                <ul>
+                    {% if sc_type %} {% for sc in scs %}
+                    <a href="/fund_article/{{ sc.title }}/">
+                        <li>{{ sc.title }} {{ sc.date }}</li>
+                    </a>
+                    {% endfor%} {% else %} {% for article in articles %}
+                    <a href="/fund_article/{{ article.title }}/">
+                        <li>{{ article.title }} {{ article.date }}</li>
+                    </a>
+                    {% endfor%} {% endif %}
+                </ul>
+            </div>
+        </div>
+        <div class='col-sm-6'>
+            <h3>大盤走勢圖</h3>
+            <hr>
+        </div>
+
+        <div class='col-sm-6'>
+            <h3>金融行情表</h3>
+            <hr>
+            <table>
+                <tr>
+                    <th>股票</th>
+                    <th>指數</th>
+                    <th>漲跌</th>
+                    <th>漲幅%</th>
+                </tr>
+                {% for si in stock_info %}
+                <tr>
+                    <td>{{ si.title }}</td>
+                    <td>{{ si.price }}</td>
+                    <td>{{ si.increase }}</td>
+                    <td>{{ si.increase_pct }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

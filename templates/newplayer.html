@@ -1,0 +1,28 @@
+{% extends 'base.html' %}{% load static %} {% block content %}
+<style>
+    #form_img {
+        background-repeat: no-repeat;
+        background-size: 400px;
+        height: 500px;
+        position: relative;
+        left: 350px;
+        top: -5px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>
+                <center>新手專區</center>
+            </h2>
+            <br/>
+            <h4>
+                <center>剛開始玩基金，不知道如何選擇嗎？</center>
+            </h4>
+        </div>
+        <div class="col-sm-4">
+            <a href="form/"><img id="form_img" src='/static/images/nBnauMWZ3YTOkVmN4MjM5ImZ0UWMwQ3Lt92Yuc2cthWcuw2cz5SMw9yL6MHc0RHa.jpg/'></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

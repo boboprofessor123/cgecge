@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1964-09-13",
+    "income": 750000,
+    "career": "製造／建築",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "已婚",
+    "dependents": 2,
+    "residence": "新北市",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "C",
+    "period": "12",
+    "balance_loan": 68000000,
+    "usage": "購置不動產-自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "任意險",
+    "insurance_premiums": 2663,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 823774,
+    "claim_descript": "竊盜未遂",
+    "dividend_category": "半年配",
+    "fund_name": "華南永昌永昌基金",
+    "price_currency": "台幣(TWN)",
+    "net": 20.05
+  }
+]

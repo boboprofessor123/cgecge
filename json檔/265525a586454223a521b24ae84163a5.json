@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1998-10-21",
+    "income": 584563,
+    "career": "製造／建築",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "已婚",
+    "dependents": 4,
+    "residence": "屏東縣",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "B",
+    "period": "12",
+    "balance_loan": 68000000,
+    "usage": "購置不動產-自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "個人健康險",
+    "insurance_premiums": 2833,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 204529,
+    "claim_descript": "車禍",
+    "dividend_category": "季配",
+    "fund_name": "華南永昌永昌基金",
+    "price_currency": "台幣(TWN)",
+    "net": 20.05
+  }
+]

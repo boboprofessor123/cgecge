@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block content %}
+<style>
+    #all {
+        margin-top: 50px;
+    }
+    
+    #button {
+        margin-bottom: 50px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>基金查詢</h3>
+            <div class="input-group">
+                <input type="text" name="search-box" class="form-control" placeholder="請輸入檢索關鍵字">
+                <span class="input-group-btn">
+<button class="btn btn-primary">檢索</button>
+</span>
+            </div>
+        </div>
+
+        <div class='col-md-12' id="all">
+            <form name='my_fund' action='/choice/' method='POST'>
+                {% csrf_token %} {{ form.as_p }}
+                <input type='submit' value='送出'>
+            </form>
+            <hr/>
+        </div>
+
+
+        <div class='col-md-12' id="button">
+            <br> {% if traget %} {% for Selected_fund in selected_fund %} {{ Selected_fund }}
+            <br> {% endfor %} {% else %} {% for Fund_commodity in fund_commodity %} {{ Fund_commodity }}
+            <br> {% endfor %} {% endif %}
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

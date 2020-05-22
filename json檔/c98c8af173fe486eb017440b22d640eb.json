@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1977-08-19",
+    "income": 348142,
+    "career": "軍／警／消防",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "未婚",
+    "dependents": 2,
+    "residence": "台北市",
+    "is_register_web_bank": 1,
+    "is_register_mobile_pay": 0,
+    "credit_level": "B",
+    "period": "12",
+    "balance_loan": 68000000,
+    "usage": "購置不動產-自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "旅綜險",
+    "insurance_premiums": 3471,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 69004,
+    "claim_descript": "風災(強風、龍捲風、颱風)",
+    "dividend_category": "年配",
+    "fund_name": "華南永昌鳳翔貨幣市場基金",
+    "price_currency": "台幣(TWN)",
+    "net": 12.05
+  }
+]

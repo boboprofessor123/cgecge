@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1966-06-16",
+    "income": 750000,
+    "career": "製造／建築",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "未婚",
+    "dependents": 4,
+    "residence": "宜蘭縣",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "C",
+    "period": "12",
+    "balance_loan": 25500000,
+    "usage": "投資理財與其他",
+    "property_house": "公教房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "任意險",
+    "insurance_premiums": 3930,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 659369,
+    "claim_descript": "其他非相撞(自撞)之機動車交通事故",
+    "dividend_category": "半年配",
+    "fund_name": "華南永昌物聯網精選基金",
+    "price_currency": "台幣(TWN)",
+    "net": 17.4
+  }
+]

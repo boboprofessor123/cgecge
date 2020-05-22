@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1994-02-04",
+    "income": 509392,
+    "career": "製造／建築",
+    "gender": 0,
+    "is_app_bank": 1,
+    "marital": "未婚",
+    "dependents": 2,
+    "residence": "台中市",
+    "is_register_web_bank": 1,
+    "is_register_mobile_pay": 0,
+    "credit_level": "C",
+    "period": "12",
+    "balance_loan": 17000000,
+    "usage": "購置不動產-自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "強制險",
+    "insurance_premiums": 2084,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 779579,
+    "claim_descript": "駕駛人過失",
+    "dividend_category": "月配",
+    "fund_name": "華南永昌鳳翔貨幣市場基金",
+    "price_currency": "台幣(TWN)",
+    "net": 12.05
+  }
+]

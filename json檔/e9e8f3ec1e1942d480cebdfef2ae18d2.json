@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1999-08-21",
+    "income": 285099,
+    "career": "軍公教",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "未婚",
+    "dependents": 5,
+    "residence": "宜蘭縣",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "B",
+    "period": "12",
+    "balance_loan": 34000000,
+    "usage": "投資理財與其他",
+    "property_house": "公教房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "個人傷害險",
+    "insurance_premiums": 3658,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 148190,
+    "claim_descript": "被物體或人意外撞擊或擊中",
+    "dividend_category": "年配",
+    "fund_name": "華南永昌龍盈平衡基金",
+    "price_currency": "台幣(TWN)",
+    "net": 24.9565
+  }
+]

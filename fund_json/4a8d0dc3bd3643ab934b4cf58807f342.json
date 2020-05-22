@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1998-08-18",
+    "income": 1009393,
+    "career": "製造／建築",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "已婚",
+    "dependents": 0,
+    "residence": "台北市",
+    "is_register_web_bank": 0,
+    "is_register_mobile_pay": 0,
+    "credit_level": "B",
+    "period": "12",
+    "balance_loan": 51000000,
+    "usage": "投資理財與其他",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "任意險",
+    "insurance_premiums": 2542,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 403573,
+    "claim_descript": "第三人過失",
+    "dividend_category": "年配",
+    "fund_name": "華南永昌龍盈平衡基金",
+    "price_currency": "台幣(TWN)",
+    "net": 24.9565
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1998-08-19",
+    "income": 1100000,
+    "career": "製造／建築",
+    "gender": 0,
+    "is_app_bank": 0,
+    "marital": "已婚",
+    "dependents": 5,
+    "residence": "基隆市",
+    "is_register_web_bank": 1,
+    "is_register_mobile_pay": 0,
+    "credit_level": "B",
+    "period": "12",
+    "balance_loan": 42500000,
+    "usage": "購置不動產-自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "強制險",
+    "insurance_premiums": 3081,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 705260,
+    "claim_descript": "整車被竊",
+    "dividend_category": "季配",
+    "fund_name": "華南永昌麒麟貨幣市場基金",
+    "price_currency": "台幣(TWN)",
+    "net": 16.2784
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "birthday": "1982-01-04",
+    "income": 525152,
+    "career": "製造／建築",
+    "gender": 0,
+    "is_app_bank": 1,
+    "marital": "已婚",
+    "dependents": 1,
+    "residence": "彰化縣",
+    "is_register_web_bank": 1,
+    "is_register_mobile_pay": 0,
+    "credit_level": "C",
+    "period": "12",
+    "balance_loan": 59500000,
+    "usage": "購置不動產-自用",
+    "property_house": "一般房貸",
+    "percent": 85,
+    "situation": "無延遲繳款",
+    "insurance_category": "任意險",
+    "insurance_premiums": 2228,
+    "is_active": 1,
+    "is_blacklist": 0,
+    "claim_amount": 296458,
+    "claim_descript": "零件被竊",
+    "dividend_category": "月配",
+    "fund_name": "華南永昌麒麟貨幣市場基金",
+    "price_currency": "台幣(TWN)",
+    "net": 16.2784
+  }
+]
