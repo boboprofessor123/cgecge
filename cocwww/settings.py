@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cocsite',
     'captcha',
-    'django_q',
+    'django_apscheduler',
 ]
 
 MIDDLEWARE = [
@@ -139,13 +139,3 @@ STATICFILES_DIRS = (
 
 
 STATIC_URL = '/static/'
-
-Q_CLUSTER = { 
-    'name': 'DjangORM', 
-    'workers': 1, 
-    'timeout': 1800, 
-    'retry': 120, 
-    'queue_limit': 50, 
-    'bulk': 10, 
-    'orm': 'default' 
-}

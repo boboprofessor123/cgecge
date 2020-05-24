@@ -12,12 +12,109 @@ import time
 import bs4,requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-#from gevent import monkey; monkey.patch_socket()
-#import gevent
 import csv
-#import threading
+from apscheduler.schedulers.background import BackgroundScheduler
+from django_apscheduler.jobstores import DjangoJobStore, register_events, register_job
 # Create your views here.
 
+scheduler = BackgroundScheduler()
+scheduler.add_jobstore(DjangoJobStore(), 'default')
+@register_job(scheduler, 'interval', id='arc_bug', hours=0, minutes=2)
+def arc_bug():
+	def web_bug():
+			chrome_options = Options() # 啟動無頭模式
+			chrome_options.add_argument('--headless')  #規避google bug
+			chrome_options.add_argument('--disable-gpu')
+			driver = webdriver.Chrome('./chromedriver',chrome_options=chrome_options)
+			driver.get('https://tw.stock.yahoo.com/us/worldidx.php')
+			#driver = requests.get('https://tw.stock.yahoo.com/us/worldidx.php').text
+			soup = bs4.BeautifulSoup(driver.page_source, 'html.parser')
+			stock = soup.select("body > center > table:nth-child(11) > tbody > tr > td > table > tbody > tr > td:nth-child(1) > a")
+			number = soup.select("#trade > b")
+			up_down = soup.select("body > center > table:nth-child(11) > tbody > tr > td > table > tbody > tr > td:nth-child(4)")
+			up_down_percent = soup.select("body > center > table:nth-child(11) > tbody > tr > td > table > tbody > tr > td:nth-child(5)")
+			stock_num = [stock[1].text, stock[2].text, stock[8].text, stock[14].text, stock[15].text]
+			number_num = [number[0].text, number[1].text, number[7].text, number[12].text, number[13].text]
+			updown_num = [up_down[1].text, up_down[2].text, up_down[8].text, up_down[14].text, up_down[15].text]
+			updown_pct_num = [up_down_percent[1].text, up_down_percent[2].text, up_down_percent[8].text, up_down_percent[14].text, up_down_percent[15].text]
+			stock_info = Stock_info.objects.all()
+			stock_info.delete()
+			for sn,nn,un,upn in zip(stock_num,number_num,updown_num,updown_pct_num):
+				st_inf = [sn,nn,un,upn]
+				sf = Stock_info.objects.create(title=st_inf[0], price=st_inf[1], increase=st_inf[2], increase_pct=st_inf[3])
+				sf.save()
+			driver.quit()
+
+	def req_bug():
+			new_links = list()
+			new_titles = list()
+			all_new_links = list()
+			all_new_titles = list()
+			arc_check = list()
+			arc_area_del = ['富達基金情報','投資風向球']
+			driver2 = requests.get('https://fund.udn.com/fund/cate/5853').text
+			soup2 = bs4.BeautifulSoup(driver2, 'html.parser')
+			news = soup2.find_all('dt', 'big')
+			arc_area = soup2.find_all('div', 'area category_box')
+			for new in news:
+				new_links.append(new.find('a')['href']) #文章的網址
+				new_titles.append(new.find('a').find('h3').text)
+
+			for (new_link,new_title) in zip(new_links,new_titles):
+				if Fund_Article.objects.filter(title=new_title).exists() == False:
+					driver_new = requests.get(new_link).text
+					soup_new = bs4.BeautifulSoup(driver_new, 'html.parser')
+					arc_area = soup_new.find(id='nav').find('b').text
+					if arc_area not in arc_area_del:
+						arc_title = soup_new.find(id='story_art_title').text #文章標題
+						#if Fund_Article.objects.filter(title=arc_title).exists() == False:
+						arc = soup_new.find(id='story_body_content')
+						arc_texts = arc.find_all('p') #文章內容
+						arc_date = soup_new.find('div', 'shareBar__info--author').find('span').text #文章日期
+						arc_source = soup_new.find('div', 'shareBar__info--author').text #文章日期
+						ac_ty = Fund_Article_Type.objects.get(type_name='最新消息')
+						print(ac_ty)
+						arc_model = Fund_Article.objects.get_or_create(title=arc_title,source=arc_source,article_type=ac_ty,date=arc_date,content=arc_texts)
+						#arc_model = Fund_Article.objects.filter(title=arc_title,source=arc_source,article_type=ac_ty,date=arc_date,content=arc_texts).distinct()
+						arc_model.save()
+			
+					else:
+						print("class_pass")
+						pass
+				else:
+					print("title_pass")
+					pass
+			all_news = soup2.find_all('dt', 'more1_5853')
+			for all_new in all_news:
+				all_new_links.append(all_new.find('a')['href']) #文章的網址
+				all_new_titles.append(all_new.find('a').text)
+			for (all_new_link,all_new_title) in zip(all_new_links,all_new_titles):
+				if Fund_Article.objects.filter(title=all_new_title).exists() == False:
+					driver_all = requests.get(all_new_link).text
+					soup_all = bs4.BeautifulSoup(driver_all, 'html.parser')
+					all_arc_area = soup_all.find(id='nav').find('b').text
+					if all_arc_area not in arc_area_del:
+						all_arc_title = soup_all.find(id='story_art_title').text #文章標題
+						#if Fund_Article.objects.filter(title=all_arc_title).exists() == False:
+						all_arc = soup_all.find(id='story_body_content')
+						all_arc_texts = arc.find_all('p') #文章內容
+						all_arc_date = soup_all.find('div', 'shareBar__info--author').find('span').text #文章日期
+						all_arc_source = soup_all.find('div', 'shareBar__info--author').text #文章日期
+						all_ac_ty = Fund_Article_Type.objects.get(type_name=all_arc_area)
+						print(all_ac_ty)
+						all_arc_model = Fund_Article.objects.get_or_create(title=all_arc_title,source=all_arc_source,article_type=all_ac_ty,date=all_arc_date,content=all_arc_texts)
+						all_arc_model.save()
+
+					else:
+						print("class_pass")
+						pass
+				else:
+					print("title_pass")
+					pass
+	req_bug()
+	web_bug()
+register_events(scheduler)
+scheduler.start()
 @login_required(login_url = '/login/')
 def homepage(request):
 	stock_info = Stock_info.objects.all()
