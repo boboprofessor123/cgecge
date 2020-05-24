@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cocsite',
     'captcha',
+    'django_q',
 ]
 
 MIDDLEWARE = [
@@ -76,17 +77,22 @@ WSGI_APPLICATION = 'cocwww.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'finance_db',
+#         'USER': 'admin',
+#         'PASSWORD': '!2@Nkust!',
+#         'HOST':'163.18.60.227',
+#         'PORT': '3306',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'finance_db',
-        'USER': 'admin',
-        'PASSWORD': '!2@Nkust!',
-        'HOST':'163.18.60.227',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -134,3 +140,12 @@ STATICFILES_DIRS = (
 
 STATIC_URL = '/static/'
 
+Q_CLUSTER = { 
+    'name': 'DjangORM', 
+    'workers': 1, 
+    'timeout': 1800, 
+    'retry': 120, 
+    'queue_limit': 50, 
+    'bulk': 10, 
+    'orm': 'default' 
+}
